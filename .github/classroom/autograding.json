@@ -3,7 +3,7 @@
     {
       "name": "Verify",
       "setup": "",
-      "run": "mvn verify",
+      "run": "mvn -B verify",
       "input": "",
       "output": "",
       "comparison": "included",
