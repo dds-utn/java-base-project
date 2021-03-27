@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Verify",
+      "setup": "",
+      "run": "mvn verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
