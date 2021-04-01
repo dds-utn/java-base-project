@@ -1,6 +1,9 @@
 name: GitHub Classroom Workflow
 
-on: [push]
+on:
+  push:
+    tags:
+      - entrega-final
 
 jobs:
   build:
