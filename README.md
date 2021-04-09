@@ -28,8 +28,10 @@ explicada en el punto anterior. Se recomienda hacerlo de la siguiente forma:
 mvn verify && git tag entrega-final && git push origin HEAD --tags
 ```
 
-# Configuración del IDE
+# Configuración del IDE (IntelliJ)
 
- 1. Tabular con dos espacios
- 2. Instalar y configurar Checkstyle
+ 1. Tabular con dos espacios: ![Screenshot_2021-04-09_18-23-26](https://user-images.githubusercontent.com/677436/114242543-73e1fe00-9961-11eb-9a61-7e34be9fb8de.png)
+ 2. Instalar y configurar Checkstyle:
+    1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
+    2. Configurarlo activando los Checks de Google: ![Screenshot_2021-04-09_18-16-13](https://user-images.githubusercontent.com/677436/114242548-75132b00-9961-11eb-972e-28e6e1412979.png)
  3. Usar fin de linea unix
