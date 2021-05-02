@@ -40,6 +40,15 @@
         <version>3.1.2</version>
         <configuration>
           <configLocation>google_checks.xml</configLocation>
+          <violationSeverity>warning</violationSeverity>
+          <violationIgnore>
+            MissingJavadocMethod,
+            MissingJavadocPackage,
+            MissingJavadocType,
+            NonEmptyAtclauseDescription,
+            JavadocParagraph,
+            SummaryJavadoc
+          </violationIgnore>
         </configuration>
         <executions>
           <execution>
