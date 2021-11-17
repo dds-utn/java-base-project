@@ -9,13 +9,13 @@ Esta es una plantilla de proyecto diseñada para:
   *  [Entrada de Blog (en español)](https://www.paradigmadigital.com/dev/nos-espera-junit-5/)
 * Maven 3.8.1 o superior
 
-# Ejecutar tests
+## Ejecutar tests
 
 ```
 mvn test
 ```
 
-# Validar el proyecto de forma exahustiva
+## Validar el proyecto de forma exahustiva
 
 ```
 mvn clean verify
@@ -28,7 +28,7 @@ Este comando hará lo siguiente:
  3. Detectará la presencia de (ciertos) code smells
  4. Validará la cobertura del proyecto
 
-# Entrega del proyecto
+## Entrega del proyecto
 
 Para entregar el proyecto, crear un tag llamado `entrega-final`. Es importante que antes de realizarlo se corra la validación
 explicada en el punto anterior. Se recomienda hacerlo de la siguiente forma:
@@ -37,13 +37,22 @@ explicada en el punto anterior. Se recomienda hacerlo de la siguiente forma:
 mvn clean verify && git tag entrega-final && git push origin HEAD --tags
 ```
 
-# Configuración del IDE (IntelliJ)
+## Configuración del IDE (IntelliJ)
 
- 1. Tabular con dos espacios: ![Screenshot_2021-04-09_18-23-26](https://user-images.githubusercontent.com/677436/114242543-73e1fe00-9961-11eb-9a61-7e34be9fb8de.png)
- 2. Instalar y configurar Checkstyle:
-    1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
-    2. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 8.35`: ![Screenshot_2021-04-09_18-16-13](https://user-images.githubusercontent.com/677436/114242548-75132b00-9961-11eb-972e-28e6e1412979.png)
- 3. Usar fin de linea unix
-    1. En **Settings/Preferences**, ir a a **Editor | Code Style**.
-    2. En la lista **Line separator**, seleccionar `Unix and OS X (\n)`.
- ![Screenshot 2021-04-10 03-49-00](https://user-images.githubusercontent.com/11875266/114260872-c6490c00-99ad-11eb-838f-022acc1903f4.png)
+### Tabular con dos espacios
+
+1. En **File/Settings...**, ir a **Editor | Code Style | Java**.
+2. Cambiar **Tab size**, **Indent** y **Continuation indent** a 2, 2 y 4 respectivamente:
+![Screenshot_20210614_170636](https://user-images.githubusercontent.com/39303639/142298802-47b30a7d-f22b-441a-84a1-5241cb9354a8.png)
+
+### Instalar y configurar Checkstyle
+
+1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
+2. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 8.35`:
+![image](https://user-images.githubusercontent.com/39303639/142299662-ca0ed8f5-03e2-4811-b0eb-0549926f422b.png)
+
+### Usar fin de linea unix
+1. En **File/Settings...**, ir a **Editor | Code Style**.
+2. En la lista **Line separator**, seleccionar `Unix and OS X (\n)`.
+ ![image](https://user-images.githubusercontent.com/39303639/142300119-8a7a0ae4-2fec-44a7-9bfb-796b93bdea04.png)
+
