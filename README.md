@@ -39,6 +39,12 @@ mvn clean verify && git tag entrega-final && git push origin HEAD --tags
 
 ## Configuración del IDE (IntelliJ)
 
+### Usar el SDK de Java 8
+
+1. En **File/Project Structure...**, ir a **Project Settings | Project**
+2. En **Project SDK** seleccionar la versión 1.8 y en **Project language level** seleccionar `8 - Lambdas, type annotations, etc.`
+![image](https://user-images.githubusercontent.com/39303639/142300569-24dd57c4-a25d-40b4-ac77-7111912dbcc5.png)
+
 ### Tabular con dos espacios
 
 1. En **File/Settings...**, ir a **Editor | Code Style | Java**.
