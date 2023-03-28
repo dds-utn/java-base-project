@@ -39,26 +39,41 @@ mvn clean verify && git tag entrega-final && git push origin HEAD --tags
 
 ## Configuración del IDE (IntelliJ)
 
-### Usar el SDK de Java 8
+### Usar el SDK de Java 17
 
 1. En **File/Project Structure...**, ir a **Project Settings | Project**
-2. En **Project SDK** seleccionar la versión 1.8 y en **Project language level** seleccionar `8 - Lambdas, type annotations, etc.`
-![image](https://user-images.githubusercontent.com/39303639/142300569-24dd57c4-a25d-40b4-ac77-7111912dbcc5.png)
+2. En **Project SDK** seleccionar la versión 17 y en **Project language level** seleccionar `17 - Sealed types, always-strict floating-point semantics`
 
-### Tabular con dos espacios
-
-1. En **File/Settings...**, ir a **Editor | Code Style | Java**.
-2. Cambiar **Tab size**, **Indent** y **Continuation indent** a 2, 2 y 4 respectivamente:
-![Screenshot_20210614_170636](https://user-images.githubusercontent.com/39303639/142298802-47b30a7d-f22b-441a-84a1-5241cb9354a8.png)
-
-### Instalar y configurar Checkstyle
-
-1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
-2. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 8.35`:
-![image](https://user-images.githubusercontent.com/39303639/142299662-ca0ed8f5-03e2-4811-b0eb-0549926f422b.png)
+![image](https://user-images.githubusercontent.com/39303639/228126065-221b9851-fb96-4f7f-a8e1-010732dc7ef6.png)
 
 ### Usar fin de linea unix
 1. En **File/Settings...**, ir a **Editor | Code Style**.
 2. En la lista **Line separator**, seleccionar `Unix and OS X (\n)`.
- ![image](https://user-images.githubusercontent.com/39303639/142300119-8a7a0ae4-2fec-44a7-9bfb-796b93bdea04.png)
 
+![image](https://user-images.githubusercontent.com/39303639/228126546-352289fa-8feb-4b39-99db-d8b860915fea.png)
+
+### Tabular con dos espacios
+
+1. En **File/Settings...**, ir a **Editor | Code Style | Java | Tabs and Indents**.
+2. Cambiar **Tab size**, **Indent** y **Continuation indent** a 2, 2 y 4 respectivamente:
+
+![image](https://user-images.githubusercontent.com/39303639/228127009-8c84ea72-969b-4e05-b311-45e3688a4164.png)
+
+### Ordenar los imports
+
+1. En **File/Settings...**, ir a **Editor | Code Style | Java | Imports**.
+2. Cambiar **Class count to use import with '*'** y **Names count to use static import with '*'** a un número muy alto (ej: 99).
+3. En **Import Layout**, dejarlo como se muestra a continuación:
+    - `import static all other imports`
+    - `<blank line>`
+    - `import all other imports`
+
+![image](https://user-images.githubusercontent.com/39303639/228126787-36f9ecff-27f2-4b99-bf11-a6bd89f67087.png)
+
+### Instalar y configurar Checkstyle
+
+1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
+2. En **File/Settings...**, ir a **Tools | Checkstyle**.
+3. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 8.35`:
+
+![image](https://user-images.githubusercontent.com/39303639/228126437-3d2f0137-3180-4221-a789-a057d920ae4e.png)
