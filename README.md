@@ -76,4 +76,5 @@ mvn clean verify && git tag entrega-final && git push origin HEAD --tags
 2. En **File/Settings...**, ir a **Tools | Checkstyle**.
 3. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 9.0.1`:
 
-![image](https://github.com/ggallici/java-base-project/assets/11719816/1fe87f18-e578-4293-bf15-8267dc647591)
+![image](https://github.com/dds-utn/java-base-project/assets/11719816/b1edc122-4675-4f8d-bffc-9e3d3366fac6)
+
