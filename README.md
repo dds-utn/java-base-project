@@ -74,6 +74,7 @@ mvn clean verify && git tag entrega-final && git push origin HEAD --tags
 
 1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
 2. En **File/Settings...**, ir a **Tools | Checkstyle**.
-3. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 8.35`:
+3. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 9.0.1`:
 
-![image](https://user-images.githubusercontent.com/39303639/228126437-3d2f0137-3180-4221-a789-a057d920ae4e.png)
+![image](https://github.com/dds-utn/java-base-project/assets/11719816/b1edc122-4675-4f8d-bffc-9e3d3366fac6)
+
